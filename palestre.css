@@ -1,0 +1,281 @@
+*{font-family: serif;
+}
+
+body{background-color: #56728398;
+}
+
+/* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+/* Main level */
+.menu {			
+  margin: 50px auto;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menu > li {
+  background: #3CC4EF;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #024e7a;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}		
+
+.menu li:hover {
+  background:  #C6C3B9;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #3CC4EF;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: auto;
+  height: auto;
+}
+.title {
+  font-size: 35px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-shadow: 10px 10px 15px #333 ;
+  }
+
+
+  
+
+  footer {
+    background-color: #00000036;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  footer a:hover {
+    color: #ddd;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .footer-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+  }
+  .footer-links a:hover {
+    color: #ddd;
+  }
+  .footer-logo {
+    display: block;
+    margin: 15px;
+    max-width: 100%;
+    height: auto;
+    width: 70px;
+    float: left;
+  }
+
+  .sottotitolo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+
+
+  .sottocontenitore {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .immagine {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+  }
+  
+  .immagine img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .descrizione {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .immagine:hover .descrizione {
+    opacity: 1;
+  }
+  
+  .descrizione h3 {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  
+  .descrizione p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
