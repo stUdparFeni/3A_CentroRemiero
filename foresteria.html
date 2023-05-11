@@ -66,35 +66,45 @@
     <br>
     <h2 class="sottotitolo">FORESTERIA</h2>
   
-    <section class="booking">
-      <h2 class="booking-title">Prenota la tua esperienza</h2>
-      <form class="booking-form">
-        <label for="name">Nome completo:</label>
-        <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
     
-        <label for="email">Indirizzo email:</label>
-        <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
     
-        <label for="date">Data prenotazione:</label>
-        <input type="date" id="date" name="date" required>
-    
-        <label for="time">Orario prenotazione:</label>
-        <input type="time" id="time" name="time" required>
-    
-        <label for="activity">Attività:</label>
-        <select id="activity" name="activity" required>
-          <option value="">Seleziona l'attività</option>
-          <option value="canottaggio">Canottaggio</option>
-          <option value="kayak">Kayak</option>
-          <option value="sup">SUP</option>
+    <div class="container">
+      <h1>Prenotazione Foresteria</h1>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="surname">Cognome:</label>
+        <input type="text" id="surname" name="surname" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="phone">Telefono:</label>
+        <input type="text" id="phone" name="phone" required>
+  
+        <label for="arrival-date">Data di arrivo:</label>
+        <input type="text" id="arrival-date" name="arrival-date" placeholder="gg/mm/aaaa" required>
+  
+        <label for="departure-date">Data di partenza:</label>
+        <input type="text" id="departure-date" name="departure-date" placeholder="gg/mm/aaaa" required>
+  
+        <label for="num-people">Numero di persone:</label>
+        <select id="num-people" name="num-people" required>
+          <option value="">Seleziona...</option>
+          <option value="1">1 persona</option>
+          <option value="2">2 persone</option>
+          <option value="3">3 persone</option>
+          <option value="4">4 persone</option>
+          <option value="5">5 persone</option>
+          <option value="6">6 persone</option>
+          <option value="7">7 persone</option>
+          <option value="8">8 persone</option>
         </select>
-    
-        <button type="submit" class="booking-btn">Prenota ora</button>
+  
+        <input type="submit" value="Prenota">
       </form>
-    </section>
-    
-    
-
+    </div>
     
       
 
