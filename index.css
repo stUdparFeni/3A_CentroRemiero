@@ -2,7 +2,10 @@
 }
 
 
-body{background-color: #56728398;
+body{
+  background-image: url('https://ilfotografo.it/wp-content/uploads/2021/11/lago_di_pusiano_9602389805-scaled.jpg') ;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* Clearing floats */
@@ -167,12 +170,33 @@ body{background-color: #56728398;
   }
   .container img {
     width: 200px;
-    margin-right: 20px;
+    margin-right: 200px;
     margin-left: 20px;
+    padding: 50px;
   }
   .container p {
     font-size: 20px;
+    color: white;
+  
   }
+ 
+#ciao1{
+  width: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+ #ciao{display: flex;
+  align-items: center;
+  margin-left: 5%;
+  font:italic 1.2em "Fira Sans", serif;
+  margin: 5% 0;
+  display: flex;
+  max-width: 35%;
+  padding: 10px;
+  color: white;
+}
 
   footer {
     background-color:  #00000036;
@@ -332,8 +356,9 @@ body{background-color: #56728398;
   }
   
   .img-right {
-   height: 150px;
-   width: 400px;
+    width: 100%; /* l'immagine occuperà l'intera larghezza del contenitore */
+    height: auto;
+
   }
  
   .btn-highlight {
@@ -357,7 +382,7 @@ body{background-color: #56728398;
   }
 
 
-  .container1 {
+  .container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -380,7 +405,7 @@ body{background-color: #56728398;
   
   .box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
       }
   
   .box a {
@@ -401,4 +426,9 @@ body{background-color: #56728398;
     font-size: 20px;
     line-height: 1.5;
   }
+  
+
+
+
+
   
