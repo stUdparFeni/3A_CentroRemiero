@@ -211,31 +211,6 @@ body{background-color: #56728398;
   }
 
  
-
-
-
-
-  
-
-    .descrizione {
-    
-    
-      background-color: #ffffff65;
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      margin-left: 260px;
-      margin-right: 260px;
-    
-    }
-    
-    .paragraph {
-      font-size: 16px;
-      line-height: 1.5;
-      color: #333;
-      opacity: 2;
-    }
     
 
 
@@ -349,3 +324,24 @@ body{background-color: #56728398;
       font-size: 16px;}
   
     
+
+      .container2 {
+        background-color: #f4f4f4;
+        padding: 20px;
+        
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 4%;
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      p {
+        font-size: 17px;
+        line-height: 1.5;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      

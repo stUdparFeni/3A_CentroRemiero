@@ -212,49 +212,4 @@ body{background-color: #56728398;
 
   
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
   
-  .left-column,
-  .right-column {
-    width: 45%;
-  }
-  
-  .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .image-gallery img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 5px;
-  }
-  
-  .booking-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .booking-form label {
-    margin-bottom: 5px;
-  }
-  
-  .booking-form input[type="text"],
-  .booking-form input[type="email"],
-  .booking-form input[type="date"] {
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .booking-form input[type="submit"] {
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-  }  
