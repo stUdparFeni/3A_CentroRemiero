@@ -252,7 +252,7 @@ body{background-color: #56728398;
 
 
   .descrizione {
-    width: 100%;
+    width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f2f2f2b9;
@@ -278,7 +278,7 @@ body{background-color: #56728398;
   .volantino {
     width: 800px;
     margin: 20px auto;
-    background-color: #f2f2f293;
+    background-color: #f2f2f2d2;
     border: 1px solid #ccc;
     padding: 20px;
     display: flex;
