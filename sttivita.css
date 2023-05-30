@@ -1,8 +1,10 @@
 *{font-family: serif;
 }
 
+
 body{background-color: #56728398;
 }
+
 
 /* Clearing floats */
 .cf:before,
@@ -211,110 +213,51 @@ body{background-color: #56728398;
   }
 
   
-
-  .container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  margin-left: 35%;
-    margin-right: 35%;
-   
-  }
-  
-  .pdf-link {
-    display: block;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #ccc;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .pdf-link:hover {
-    background-color: #f5f5f5;
-  
-  }
-  
-  .pdf-link img {
-    max-width:auto;
-    max-height: 100%;
-  
-  }
-  
-  .pdf-desc {
-    font-size: 14px;
-    margin: 0;
-    text-align: center;
-    margin: 20px;
-  }
-
-
-
-
-  .descrizione {
-    width: 1000px;
-    margin: 20px auto;
+  main {
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
   }
-
-
-  .ciao p {
-    line-height: 1.5;
+  
+  section {
+    margin-bottom: 25px;
   }
-
-  .descrizione ul {
-    padding-left: 20px;
-  }
-
-  .descrizione li {
+  
+  h2 {
+    color: #333;
+    font-size: 25px;
     margin-bottom: 10px;
   }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
 
- 
 
-  .volantino {
-    width: 800px;
-    margin: 20px auto;
-    background-color: #f2f2f2d2;
-    border: 1px solid #ccc;
-    padding: 20px;
+  .gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .gallery {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 100%;
+    animation: slide 10s infinite;
   }
-
-  .left-content,
-  .right-content {
-    flex: 1;
+  
+  .gallery img {
+    width: 100%;
+    object-fit: cover;
   }
-
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
   }
-
-  .header h1 {
-    color: #003366;
-    font-size: 24px;
-    margin: 0;
-  }
-
-  .content {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .content img {
-    max-width: 45%;
-    height: auto;
-  }
-
-  .content p {
-    max-width: 45%;
-    margin: 0;
-  }
-
-
- 
+  
